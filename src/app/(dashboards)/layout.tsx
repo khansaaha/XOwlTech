@@ -7,7 +7,7 @@ const ScrollToTop = dynamic(() => import('@/components/ScrollToTop'))
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <AuthProtectionWrapper>
+    <div>
       <Suspense fallback={<div />}>
         <Navbar />
       </Suspense>
@@ -21,7 +21,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <Suspense fallback={<div />}>
         <ScrollToTop />
       </Suspense>
-    </AuthProtectionWrapper>
+    </div>
   )
 }
 

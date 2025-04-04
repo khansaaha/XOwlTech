@@ -6,13 +6,13 @@ const ScrollToTop = dynamic(() => import('@/components/ScrollToTop'))
 
 const HorizontalLayout = ({ children }: ChildrenType) => {
   return (
-    <AuthProtectionWrapper>
+    <div>
       <Suspense fallback={<div />}>{children}</Suspense>
 
       <Suspense fallback={<div />}>
         <ScrollToTop />
       </Suspense>
-    </AuthProtectionWrapper>
+    </div>
   )
 }
 export default HorizontalLayout
