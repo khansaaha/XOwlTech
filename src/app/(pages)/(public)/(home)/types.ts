@@ -29,3 +29,15 @@ export type JobDetailType = {
   location: string
   jobType: string
 }
+
+export type Demo = {
+  image: StaticImageData
+  url: string
+  name: string
+}
+
+export type FeatureType = {
+  icon?: ReactNode
+  name: string
+  text?: string
+}
